@@ -1,0 +1,76 @@
+.acai-section{
+
+    background-color: #ffffff;
+    color:#000000;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+  
+    position: relative;
+    }
+    
+    
+    
+    
+    .acai-section .container {
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+    height: 100%;
+    }
+    
+    .acai-section .container .right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    
+    }
+    .acai-about-item{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        font-size: 1rem;
+    }
+    
+    .acai-section .container .left{
+        display: grid;
+        place-items: center;
+        
+       height: auto;
+        width: 50%;
+    padding:1.5rem;    
+    
+    }
+    .acai-section .container .left img{
+    max-width: 100%;
+    width: inherit;
+    
+    }
+    
+    
+    
+    .about-item__title{
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+       
+    
+    }
+    
+    .acai-tag{
+    font-size: 1.3rem;
+    background-color: white;
+    color:#622067;
+    
+    padding:0.5rem ;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width:185px ;
+    position: absolute;
+    bottom:0;
+    max-height:60px ;
+    
+    padding: 1rem;
+    
+    } 
+    

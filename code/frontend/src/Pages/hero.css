@@ -1,0 +1,48 @@
+
+.hero {
+    height: calc(100vh - 50px);
+display: grid;
+place-items: center;
+}
+.hero-container{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 100%;
+}
+.hero-container .left{
+
+width: 50%;
+height: 100%;
+padding: 2rem 2rem 0 2rem;
+font: 2em sans-serif;
+display: grid;
+place-content: center;
+
+}
+.hero-container .right {
+
+width: 50%;
+
+
+}
+.company-title{
+color:#9EC12F;
+
+
+}
+.tag{
+font-size: 1.3rem;
+background-color: #622067;
+color:white;
+
+padding:0.5rem ;
+text-align: center;
+border-radius: 20px 20px 0 0;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+max-width:185px ;
+/* position */
+position: absolute;
+bottom: 0;
+}
