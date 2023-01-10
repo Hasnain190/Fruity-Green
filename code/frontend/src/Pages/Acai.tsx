@@ -1,19 +1,20 @@
 import React from "react";
-import Buy from "../components/buy";
+import Buy from "../components/Buy";
 import "./acai.css";
 import acai from '../assets/acai-bowl.png'
 export default function Acai() {
   return (
     <section className="acai-section">
       <div className="container">
-        <div className="right">
+      {/* <img src={acai} alt="acai  image" /> */}
+       
           {/* description of acai will come here */}
           <div className="acai-about-item">
             <div className="about-item__title">
-              <h2>Acai Bows</h2>
+              <h2 className="acai-title">Acai Bowls</h2>
             </div>
 
-            <div className="desc">
+            <div className="acai-desc">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
               incidunt dolores placeat temporibus soluta ratione sequi nesciunt
               amet doloribus velit. Eaque aliquam sequi est saepe dolor neque
@@ -26,16 +27,12 @@ export default function Acai() {
             <Buy></Buy>
           </div>
 
+          <div className=" acai-tag">SMOOTHIES</div>
           {/* tag */}
-          <div className=" acai-tag">ACIA BOWLS</div>
         </div>
 
-        <div className="left">
-          {/* image of acai box */}
-
-          <img src={acai} alt="acai  image" />
-        </div>
-      </div>
+        
+     
     </section>
   );
 }

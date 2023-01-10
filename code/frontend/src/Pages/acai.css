@@ -1,61 +1,67 @@
 .acai-section{
 
     background-color: #ffffff;
-    color:#000000;
+    background-image: url('../assets/acai-bowl.png');
+    background-repeat: no-repeat;
+    backdrop-filter: blur(1px);
+    ;
+    background-size: auto;
+    color:#ffffff;
     font-family: Arial, Helvetica, sans-serif;
-    height: 100vh;
+    min-height: 100vh;
   
     position: relative;
-    }
-    
-    
-    
-    
-    .acai-section .container {
+}
+
+
+
+
+.acai-section .container {
     display: flex;
     justify-content: space-between;
     gap:10px;
     height: 100%;
-    }
     
-    .acai-section .container .right{
-    width: 50%;
+    align-items: center;
+    padding:25px;
+    padding-bottom: 60px;
+    
+    
+}
+
+.acai-title{
+    
+    font-size: 1.5rem;
+    text-align: center;
+    margin:15px;
+    
+}
+.acai-about-item{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    border-radius: 30px;
+    color: white;
+    z-index: 2;
+    
+    
     display: flex;
-    justify-content: center;
-    margin: 2rem;
-    
-    }
-    .acai-about-item{
-        display: flex;
-        flex-direction: column;
-        gap:20px;
+    flex-direction: column;
+    gap:20px;
         font-size: 1rem;
     }
     
-    .acai-section .container .left{
-        display: grid;
-        place-items: center;
-        
-       height: auto;
-        width: 50%;
-    padding:1.5rem;    
-    
-    }
-    .acai-section .container .left img{
-    max-width: 100%;
-    width: inherit;
-    
-    }
-    
-    
-    
-    .about-item__title{
+    .acai-about-item__title{
     
     font-family: Verdana, Geneva, Tahoma, sans-serif;
        
     
     }
+    .acai-desc{
     
+    margin:1.3rem;
+    line-height: 1.2rem;
+    word-spacing: 1em;
+    }
     .acai-tag{
     font-size: 1.3rem;
     background-color: white;
