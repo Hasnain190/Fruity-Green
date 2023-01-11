@@ -24,7 +24,7 @@ nav {
 .brand-logo img {
   width: 50px;
 }
-ul {
+nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -32,17 +32,17 @@ ul {
   align-items: center;
 }
 
-li {
+nav li {
   margin: 0 1rem;
 }
 
-a {
+nav a {
   color: #fff;
   text-decoration: none;
   font-size: 1rem;
 }
 
-a:hover {
+nav a:hover {
   color: #aaa;
 }
 
@@ -65,7 +65,7 @@ a:hover {
     background-color: #8D6393;
     width: 100%;
     padding:0.5rem;
-    overflow: scroll;
+    
   }
   
   .navbar-menu ul{

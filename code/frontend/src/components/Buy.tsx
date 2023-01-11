@@ -1,10 +1,9 @@
 import React from 'react'
 import './buy.css'
-export default function Buy() {
+export default function Buy({Title}) {
   return (
    <button className="buy">
-    Buy Now!
-    
+ {Title}  
     </button>
     
   )

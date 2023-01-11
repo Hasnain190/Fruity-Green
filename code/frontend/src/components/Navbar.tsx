@@ -12,7 +12,7 @@ export default function Navbar() {
           Fruity Greens
         </Link>
         <div
-          className='navbar-menu'
+          className="navbar-menu"
           // onClick={() => setIsOpen(!isOpen)}
         >
           <ul className="right hide-on-med-and-down">
@@ -24,6 +24,17 @@ export default function Navbar() {
             </li>
             <li>
               <Link to="/acai-menu">ACAI BOWLS</Link>
+            </li>
+            <li>
+              <Link to="/cart">
+                <i className="fa fa-cart-plus"aria-hidden="false" ></i>
+              </Link>
+            </li>
+            <li>
+              <Link to="/account">
+              <i className="fa fa-user" aria-hidden="false"></i>
+
+              </Link>
             </li>
           </ul>
         </div>

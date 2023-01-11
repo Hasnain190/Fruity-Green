@@ -1,0 +1,94 @@
+{
+  "todotree": {
+    "tree": [
+      {
+        "key": 1673433972821,
+        "children": [
+          {
+            "key": 1673459206064,
+            "children": [],
+            "todo": {
+              "content": "product",
+              "id": 1673459206064,
+              "level": "default",
+              "done": true,
+              "focus": false
+            }
+          },
+          {
+            "key": 1673459216290,
+            "children": [],
+            "todo": {
+              "content": "user",
+              "id": 1673459216290,
+              "level": "default",
+              "done": false
+            }
+          },
+          {
+            "key": 1673459220966,
+            "children": [],
+            "todo": {
+              "content": "category",
+              "id": 1673459220966,
+              "level": "default",
+              "done": false
+            }
+          },
+          {
+            "key": 1673459227342,
+            "children": [],
+            "todo": {
+              "content": "",
+              "id": 1673459227342,
+              "level": "default",
+              "done": false
+            }
+          }
+        ],
+        "todo": {
+          "content": "remove typescript error",
+          "id": 1673433972821,
+          "level": "default",
+          "done": false,
+          "focus": false
+        }
+      },
+      {
+        "key": 1673434027863,
+        "children": [],
+        "todo": {
+          "content": "Show all backend calls to frontend",
+          "id": 1673434027863,
+          "level": "default",
+          "done": false,
+          "focus": false
+        }
+      },
+      {
+        "key": 1673434062551,
+        "children": [],
+        "todo": {
+          "content": "Do it for all smoothies and acai page",
+          "id": 1673434062551,
+          "level": "default",
+          "done": false,
+          "focus": false
+        }
+      }
+    ],
+    "expandKeys": [
+      1673433972821,
+      1673434132690,
+      1673459206064
+    ],
+    "schema": "https://github.com/Saber2pr/vsc-ext-todolist/blob/master/src/api/type.ts#L3",
+    "add_mode": "bottom",
+    "virtual": false,
+    "showLine": false,
+    "playFontSize": 24,
+    "title": "Today's",
+    "autoSort": false,
+    "lang": "en"
+  }
+}
