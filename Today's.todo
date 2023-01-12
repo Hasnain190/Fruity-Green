@@ -66,12 +66,23 @@
       },
       {
         "key": 1673434027863,
-        "children": [],
+        "children": [
+          {
+            "key": 1673563337667,
+            "children": [],
+            "todo": {
+              "content": "",
+              "id": 1673563337667,
+              "level": "default",
+              "done": false
+            }
+          }
+        ],
         "todo": {
           "content": "Show all backend calls to frontend",
           "id": 1673434027863,
           "level": "default",
-          "done": false,
+          "done": true,
           "focus": false
         }
       },
@@ -90,7 +101,8 @@
     "expandKeys": [
       1673433972821,
       1673434132690,
-      1673459206064
+      1673459206064,
+      1673434027863
     ],
     "schema": "https://github.com/Saber2pr/vsc-ext-todolist/blob/master/src/api/type.ts#L3",
     "add_mode": "bottom",
