@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from "react";
-import {  useSelector } from "react-redux";
 import "./juice-menu.css";
-import image from "../assets/juice-glass.png";
 import Buy from "../components/Buy";
 
 import Loader from "../components/Loader";
-// import { listProducts } from "../actions/productActions";
 import { useNavigate, useParams } from "react-router-dom";
 
 import { useAppDispatch, useAppSelector } from "../hooks";
