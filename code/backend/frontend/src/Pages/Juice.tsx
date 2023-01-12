@@ -28,7 +28,7 @@ export default function Juice() {
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus incidunt dolores placeat temporibus soluta ratione sequi nesciunt amet doloribus velit. Eaque aliquam sequi est saepe dolor neque earum enim placeat.
                             Dolorem nesciunt id adipisci magnam? Reprehenderit earum est ipsa, sit quae velit id fuga laborum. Sequi delectus ut excepturi doloremque similique, ducimus consequuntur eligendi, blanditiis quam, accusantium soluta! Porro, provident.
                         </div>
-                        <Buy></Buy>
+                        <Buy Title='Add to Cart'></Buy>
 
                     </div>
 

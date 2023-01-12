@@ -24,7 +24,7 @@ export default function Acai() {
               consequuntur eligendi, blanditiis quam, accusantium soluta! Porro,
               provident.
             </div>
-            <Buy></Buy>
+            <Buy Title="Grab Now" />
           </div>
 
           <div className=" acai-tag">SMOOTHIES</div>

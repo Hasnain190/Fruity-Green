@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-g92s23!vzs3(jkw+abr3u0(&@88q#@2@b^5*3uaan_t9i1h@^!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["http://localhost:5173" , "127.0.0.1", "localhost"]
 
 
 # Application definition
@@ -35,6 +35,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
+    'corsheaders',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
@@ -44,9 +45,11 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
+
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    
+    'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -59,7 +62,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
         
-         os.path.join(BASE_DIR, 'frontend/build')
+         os.path.join(BASE_DIR , 'frontend/dist')
         
         ],
         'APP_DIRS': True,
@@ -126,8 +129,8 @@ STATIC_URL = 'static/'
 MEDIA_URL = '/images/'
 
 STATICFILES_DIRS = [
+         os.path.join(BASE_DIR / '/frontend/dist/assets'),
     BASE_DIR / 'static',
-    BASE_DIR / 'frontend/build/static'
 ]
 
 MEDIA_ROOT = BASE_DIR / 'static/images'
@@ -137,6 +140,9 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 # Needs to be set to false later on
 CORS_ALLOW_ALL_ORIGINS = True
 
+CORS_ORIGIN_WHITELIST = (
+    'http://localhost:5173',
+)
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 

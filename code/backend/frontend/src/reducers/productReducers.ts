@@ -12,6 +12,7 @@ import {
 } from '../constants/productConstants'
 
 import '../../type'
+import { createSlice } from '@reduxjs/toolkit';
 
 
 interface ProductListRequestAction {
@@ -36,6 +37,32 @@ interface ProductListRequestAction {
   type ProductListAction = ProductListSuccessAction | ProductListFailAction| ProductListRequestAction;
   
 
+  interface Product {
+    _id: number;
+    name: string;
+    image: string;
+    description: string;
+    Featured: boolean;
+    price: string | number;
+    countInStock: number;
+    createdAt: string;
+    user: number;
+    category: number;
+}
+
+// interface ProductListState {
+//     products: Product[];
+//     loading: boolean;
+//     error: any;
+// }
+
+// interface ProductDetailsState {
+//     product: Product;
+//     loading: boolean;
+//     error: any;
+// }
+
+
 export const productListReducer = (state = { products: [] }, action:ProductListAction) => {
     switch (action.type) {
         case PRODUCT_LIST_REQUEST:
@@ -55,6 +82,13 @@ export const productListReducer = (state = { products: [] }, action:ProductListA
             return state
     }
 }
+
+
+
+
+
+
+// Product Details
 
 interface ProductDetailsRequestAction {
     type: typeof PRODUCT_DETAILS_REQUEST;

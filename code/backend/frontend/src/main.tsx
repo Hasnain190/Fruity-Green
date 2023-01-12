@@ -13,8 +13,14 @@ import Checkout from "./Screens/Checkout";
 import Account from "./Screens/Account";
 import SmoothiesMenu from "./Screens/SmoothiesMenu";
 import AcaiMenu from "./Screens/AcaiMenu";
+
+import { Provider } from "react-redux";
+import { store } from "./app/store";
+
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
+  <Provider store={store} >
+  
     <Router>
       <Navbar></Navbar>
       <Routes>
@@ -28,5 +34,9 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
       </Routes>
       <Footer></Footer>
     </Router>
+  </Provider>
   </React.StrictMode>
 );
+
+
+
