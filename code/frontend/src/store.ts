@@ -3,10 +3,10 @@ import {
     combineReducers,
     applyMiddleware
 } from 'redux'
-import { configureStore } from '@reduxjs/toolkit'
-
+import { configureStore , createSlice} from '@reduxjs/toolkit'
 import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
+import { useDispatch } from 'react-redux'
 
 import {
     productListReducer,
@@ -21,9 +21,7 @@ import {
 
     userDetailsReducer,
     userUpdateProfileReducer,
-    userListReducer,
-    userDeleteReducer,
-    userUpdateReducer,
+  
 
 } from './reducers/userReducers'
 import {
@@ -40,35 +38,35 @@ import {
     categoryIncludeReducer,
 
 } from './reducers/categoryReducers'
+
+
+
 const reducer = combineReducers({
     productList: productListReducer,
     productDetails: productDetailsReducer,
    
-    productCategory: productCategoryReducer,
-    productCategoryList: productCategoryListReducer,
+    // productCategory: productCategoryReducer,
+    // productCategoryList: productCategoryListReducer,
 
-    categoryInclude: categoryIncludeReducer,
+    // categoryInclude: categoryIncludeReducer,
 
    
 
-    cart: cartReducer,
+    // cart: cartReducer,
 
-    userLogin: userLoginReducer,
-    userRegister: userRegisterReducer,
+    // userLogin: userLoginReducer,
+    // userRegister: userRegisterReducer,
 
 
-    userDetails: userDetailsReducer,
-    userUpdateProfile: userUpdateProfileReducer,
-    userList: userListReducer,
-    userDelete: userDeleteReducer,
-    userUpdate: userUpdateReducer,
-
-    orderCreate: orderCreateReducer,
-    orderDetails: orderDetailsReducer,
-    orderPay: orderPayReducer,
-    orderListMy: orderListMyReducer,
-    orderList: orderListReducer,
-    orderDeliver: orderDeliverReducer,
+    // userDetails: userDetailsReducer,
+    // userUpdateProfile: userUpdateProfileReducer,
+  
+    // orderCreate: orderCreateReducer,
+    // orderDetails: orderDetailsReducer,
+    // orderPay: orderPayReducer,
+    // orderListMy: orderListMyReducer,
+    // orderList: orderListReducer,
+    // orderDeliver: orderDeliverReducer,
 
 })
 
@@ -97,11 +95,21 @@ const middleware = [thunk]
 
 const store = configureStore({
 
-reducer: { reducer}
+reducer: { 
+    
+
+
+
+}
 
 })
 
 
+export type AppDispatch = typeof store.dispatch
+export const useAppDispatch: () => AppDispatch = useDispatch // Export a hook that can be reused to resolve types
+
 
 export default store
-export type RootState = ReturnType<typeof store.getState>;
+
+//  RootState is a type that is equivalent to the type of the current state of the application, as returned by the store.getState method. This can be useful for type checking and for providing better type information for the rest of the application.
+export type RootState = ReturnType<typeof reducer>;
